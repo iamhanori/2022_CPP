@@ -139,8 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C_기본\03.swich.c" />
+    <ClCompile Include="C_기본\04.c" />
     <ClCompile Include="C_기본\04.함수의정의.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C_기본\04.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
