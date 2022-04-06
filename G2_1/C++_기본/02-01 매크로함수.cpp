@@ -7,6 +7,7 @@ using namespace std;
 #define jegob(A) A*A
 
 int main(void) {
+	// 연산자 우선순위 때문에 의도치 않은 결과가 나옴
 	cout << jegob(3) << endl;
 	cout << 3*3 << endl;
 	 
