@@ -19,8 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C++_기본\02-06 string 대입.cpp" />
-    <ClCompile Include="C++_기본\02-07 string 덧붙이기.cpp" />
+    <ClCompile Include="C++_기본\02-08 string 비교.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
