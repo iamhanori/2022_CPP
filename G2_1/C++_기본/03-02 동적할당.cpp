@@ -9,4 +9,6 @@ int main(void) {
 	cout << *ptr1 << endl;
 	
 	delete ptr1;
+	
+	return 0;
 } 
