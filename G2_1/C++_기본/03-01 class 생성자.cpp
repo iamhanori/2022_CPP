@@ -21,7 +21,7 @@ int main(void) {
 	Student* stu1 = new Student;
 	stu1->show();
 
-	Student* stu2 = new Student;
+	Student* stu2 = new Student(1111, "JMP");
 	stu2->show();
 
 	delete stu1;
