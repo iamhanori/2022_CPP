@@ -30,8 +30,6 @@ int main(void) {
 	stu1.show();
 	stu2.show();
 
-	
-
 	return 0;
 }
 
