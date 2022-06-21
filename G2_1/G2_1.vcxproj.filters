@@ -18,5 +18,8 @@
     <ClCompile Include="CPP_v\04-03 대입연산자 오버로딩.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="cpp\176p.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -22,21 +22,26 @@ public:
 	void show(void);
 };
 
+class HighSchoolStudent : public Student {
+public:
+	HighSchoolStudent(int Hakbun, const char* Name, string Hakgwa)
+		:Student(Hakbun, Name, Hakgwa), sHakgwa(Hakgwa)
+	{
+		cout << "HighSchooolStudent 일반생성자 호출" << endl;
+	}
+
+	.// 소멸자
+		~HighSchoolStudent() {
+		cout << "HighSchoolStudent 소멸자 호출" << endl;
+	}
+
+private:
+	string sHakgwa;
+};
+
 int main(void) {
-	Student stu1 = Student(1111, "JWP");   // 일반 생성자 호출
-	Student stu3 = Student(2222, "JYP");   // 일반 생성자 호출
-	stu1.show();
-
-
-	//Student* stu2 = new Student(stu1);   // 복사 생성자 호출
-	//stu2->show();
-	Student stu2 = stu1;
-	stu2.show();
-	
-	// 대입연산자 호출
-	// stu1.operator=(stu3);
-	stu1 = stu3;
-	stu1.show();
+	HighSchoolStudent hss = HighSchoolStudent(1111, "JMP", "soft");
+	hss.show();
 
 	return 0;
 }
@@ -55,13 +60,13 @@ Student::Student(int Hakbun, const char* Name)
 Student::Student(const Student& rhs)
 	: nHakbun(rhs.nHakbun), sName(rhs.sName)
 {
-	cout << "복사생성자 호출" << endl;
+	cout << "일반생성자 호출" << endl;
 }
 
 Student::~Student()
 {
 	delete[]sName;
-	cout << "소멸자 호출" << endl;
+	cout << "Studebt 소멸자 호출" << endl;
 }
 
 // 연산자 오버로딩
