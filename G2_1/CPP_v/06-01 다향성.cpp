@@ -6,11 +6,11 @@ using namespace std;
 class Animal {
 public:
 	Animal() { cout << "Animal 생성" << endl; }
-	~Animal() { cout << "Animal 소멸" << endl; }
+	virtual ~Animal() { cout << "Animal 소멸" << endl; }
 
-	void eat(void) { cout << "동물 먹어" << endl; }
+	virtual void eat(void) { cout << "동물 먹어" << endl; }
 	// roar함수를 가상함수테이블에 등록(동적바인딩)
-	virtual void roar(void) { cout << "동물 짖어" << endl; }
+	void roar(void) { cout << "동물 짖어" << endl; }
 	void walk(void) { cout << "동물 걸어" << endl; }
 
 private:
@@ -23,17 +23,17 @@ private:
 class Tiger : public Animal {
 public:
 	Tiger() { cout << "Tiger 생성" << endl; }
-	~Tiger() { cout << "Tiger 소멸" << endl; }
+	virtual ~Tiger() { cout << "Tiger 소멸" << endl; }
 
-	void roar(void) override { cout << "어흥" << endl; }
+	void roar(void) { cout << "어흥" << endl; }
 };
 
 class Dog : public Animal {
 public:
 	Dog() { cout << "Dog 생성" << endl; }
-	~Dog() { cout << "Dog 소멸" << endl; }
+	virtual ~Dog() { cout << "Dog 소멸" << endl; }
 
-	void roar(void) override { cout << "멍멍" << endl; }
+	void roar(void) { cout << "멍멍" << endl; }
 };
 
 void main(void) {
