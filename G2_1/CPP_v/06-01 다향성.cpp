@@ -27,11 +27,17 @@ public:
 };
 
 void main(void) {
-	Animal animal;
-	animal.roar();	// 동물짖어
+	Animal *animal= new Animal;
+	animal->roar();	// 동물짖어
+	delete animal;
 
-	Dog dog;
-	dog.roar(); // 멍멍
+	animal = new Tiger;
+	animal->roar();	// 어흥
+	delete animal;
+
+	animal = new Dog;
+	animal->roar();	// 멍멍
+	delete animal;
 
 
 }
